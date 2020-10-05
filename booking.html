@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="booking.css" />
+    <script src="booking.js"></script>
+  </head>
+
+  <body>
+    <div class="top-bar">
+      <div id="brand">
+        SPARK | RENTALS
+      </div>
+      <ul>
+        <li style="float: right"><a href="login.html">Logout</a></li>
+        <!--<li style="float: right"><a href="contact.html">Contact us</a></li> -->
+        <li style="float: right"><a href="vehicles.html">Vehicles</a></li>
+        <li style="float: right"><a  class="active" href="booking.html">Rent</a></li>
+        <li style="float: right">
+          <a href="home.html">Home</a>
+        </li>
+      </ul>
+    </div>
+
+    <main>
+      <div class="flex-container formContainer ">
+        <div class="div1">
+          <!-- form -->
+          <form name="bookingForm">
+            <div>
+              <select
+                class="width100"
+                name="cars"
+                id="cars"
+                onChange="changeImage()"
+              >
+                <option value="" disabled selected>Select your car</option>
+                <option value="audiQ3">AUDI Q3</option>
+                <option value="mercedesGla">MERCEDES GLA</option>
+                <option value="baleno">BALENO</option>
+                <option value="fordFigo">FORD FIGO</option>
+              </select>
+            </div>
+            <div class="width100">
+              <span class="symbol">&#128204;</span>
+              <input
+                class="inputWithSymbol"
+                type="text"
+                id="pickupLocation"
+                name="pickupLocation"
+                placeholder="Pickup location"
+              />
+            </div>
+            <div class="width100">
+              <input
+                type="text"
+                placeholder="Pickup date"
+                onfocus="(this.type='date')"
+                onblur="(this.type='text')"
+              />
+              <input
+                type="text"
+                placeholder="Pickup time"
+                onfocus="(this.type='time')"
+                onblur="(this.type='text')"
+              />
+            </div>
+            <div class="width100">
+              <span class="symbol">&#128204;</span>
+              <input
+                class="inputWithSymbol"
+                type="text"
+                id="dropoffLocation"
+                name="dropoffLocation"
+                placeholder="Dropoff location"
+              />
+            </div>
+            <div class="width100">
+              <input
+                type="text"
+                placeholder="Dropoff date"
+                onfocus="(this.type='date')"
+                onblur="(this.type='text')"
+              />
+              <input
+                type="text"
+                placeholder="Dropoff time"
+                onfocus="(this.type='time')"
+                onblur="(this.type='text')"
+              />
+            </div>
+
+            <div>
+              <button class="width100 button1" type="button" onclick="book()">
+                Book
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="div2">
+          <!-- display car -->
+          <p class="textHeading">GET 15% OFF YOUR RENTAL</p>
+          <p class="subtext">Plan your trip now</p>
+          <div>
+            <img
+              id="selectedCar"
+              src="images/audiQ3.png"
+              alt="A cute orange cat lying on its back."
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

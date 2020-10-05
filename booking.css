@@ -1,0 +1,234 @@
+body {
+  background-image: url("images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  --theme: #deab7c;
+  --accent-color1: #568ea6;
+  --accent-color2: #f1d185;
+  /* // #ffbf00; */
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: inline;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: var(--theme);
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  /* background-color: white; */
+  border: 2px solid var(--theme);
+  /* color:white; */
+}
+
+li a.active {
+  color: white;
+  background-color: var(--theme);
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-container > div {
+  text-align: left;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.formContainer {
+  background-image: linear-gradient(
+    0deg,
+    rgba(141, 110, 81, 0.829) 12%,
+    rgba(222, 171, 124, 0.247) 36%,
+    rgba(187, 145, 105, 0.719) 74%
+  );
+  margin: 50px 50px 0 50px;
+}
+.registerContainer{
+  margin: auto;
+  width: 50%;
+  margin-top: 50px;
+  justify-content: center;
+  background-image: none;
+
+}
+.loginContainer{
+  background-image: none;
+  margin: auto;
+  width: 50%;
+  margin-top: 50px;
+  justify-content: center;
+
+}
+.loginContainer .div2{
+  background-color: #fea889;
+  text-align: center;
+}
+.loginContainer .div1{
+  margin: 0;
+  text-align: center;
+}
+.div2 {
+  width: 50%;
+}
+.div1 {
+  width: 50%;
+  background-color: white;
+  margin: 20px 10px 10px 20px;
+  padding: 20px;
+  /* box-shadow: 10px 10px 15px rgb(116, 114, 114); */
+}
+.registerDiv{
+  width:70%;
+  margin: 20px 10px 10px 20px;
+
+}
+
+input,
+select,
+button {
+  font-size: 16px;
+  padding: 5px;
+  margin: 10px 0 10px 0;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.textHeading {
+  color: white;
+  font-weight: 800;
+  font-size: 40px;
+  margin: 5px;
+  margin-top: 30px;
+}
+
+#logInText {
+  color: black;
+  font-weight: 800;
+  font-size: 40px;
+  margin: 5px;
+  margin-top: 20px;
+}
+
+.subtext {
+  color: black;
+  font-weight: 600;
+  font-size: 30px;
+  margin: 5px;
+}
+
+.button1 {
+  background-color: var(--accent-color1);
+  transition-duration: 0.4s;
+}
+
+.button1:hover {
+  background-color: #fea889;
+  color: white;
+}
+
+.button2:hover {
+  background-color: var(--accent-color1);
+}
+
+.button2 {
+  background-color: #fea889;
+  color: white;
+  transition-duration: 0.4s;
+  font-size:30px;
+  padding:10px;
+  font-weight: 300px;
+  width:500px;
+  border:2px solid white;
+
+}
+#registerButtonLoginPage{
+  font-size:20px;
+  width:250px;
+}
+.symbol {
+  width: 20%;
+  font-size: 14px;
+  background-color: var(--accent-color1);
+  border-left: 1px solid rgb(118, 118, 118);
+  border-top: 1px solid rgb(118, 118, 118);
+  border-bottom: 1px solid rgb(118, 118, 118);
+  margin-right: -3.5px;
+  padding: 7px;
+}
+.inputWithSymbol {
+  width: 87%;
+}
+#brand {
+  color: rgb(255, 198, 144);
+  font-size: 50px;
+  font-weight: 1000;
+  display: inline-block;
+  /* text-shadow: 2px 2px 20px white; */
+  border: 4px solid rgb(255, 198, 144);
+  background-color:rgba(255, 198, 144, 0.185);
+  margin-left: 20px;
+  padding: 0 5px 0 5px;
+}
+
+.top-bar {
+  margin-top: 20px;
+}
+
+.homePageDiv{
+  text-align:center;
+}
+
+div.gallery {
+  border:1px solid #ccc;
+  width: 300px;
+  /* display: inline-block; */
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 25px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  background-color: #fea889;
+
+}
+
+.vehiclesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: none;
+  justify-content: center;
+}

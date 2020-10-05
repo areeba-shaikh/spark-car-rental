@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="booking.css" />
+    <script src="booking.js"></script>
+  </head>
+
+  <body>
+    <div class="top-bar">
+      <div id="brand">SPARK | RENTALS</div>
+      <ul>
+        <li style="float: right"><a   class="active" href="login.html">Login</a></li>
+        <!--<li style="float: right"><a href="contact.html">Contact us</a></li> -->
+        <li style="float: right"><a href="vehicles.html">Vehicles</a></li>
+        <li style="float: right"><a href="booking.html">Rent</a></li>
+        <li style="float: right">
+          <a href="home.html">Home</a>
+        </li>
+      </ul>
+    </div>
+
+    <main>
+      <div class="flex-container formContainer loginContainer">
+        <div class="div1">
+          <!-- form -->
+          <form name="LoginForm">
+            <div class="width100">
+              <p id="logInText">Login</p>
+              <input
+                class="inputWithSymbol"
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Username"
+              />
+            </div>
+
+            <div class="width100">
+              <input
+                class="inputWithSymbol"
+                type="text"
+                id="password"
+                name="password"
+                placeholder="Password"
+              />
+            </div>
+
+            <div>
+              <button class="width100 button1" type="button" onclick="login()">Login</button>
+            </div>
+          </form>
+        </div>
+        <div class="div2">
+          <!-- display car -->
+          <p class="textHeading">Hello!</p>
+          <p class="subtext">Enter your details and start journey with us</p>
+          <div>
+            <button type="button" class="button2" id="registerButtonLoginPage" onclick="goToRegister()">
+              REGISTER
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
