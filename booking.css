@@ -143,6 +143,7 @@ button {
 .button1 {
   background-color: var(--accent-color1);
   transition-duration: 0.4s;
+  color:white;
 }
 
 .button1:hover {
@@ -158,10 +159,10 @@ button {
   background-color: #fea889;
   color: white;
   transition-duration: 0.4s;
-  font-size:30px;
+  font-size:20px;
   padding:10px;
   font-weight: 300px;
-  width:500px;
+  width:200px;
   border:2px solid white;
 
 }
@@ -214,7 +215,7 @@ div.gallery:hover {
 
 div.gallery img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 div.desc {
@@ -223,7 +224,7 @@ div.desc {
   color: white;
   font-size: 30px;
   background-color: #fea889;
-
+  
 }
 
 .vehiclesContainer {
@@ -231,4 +232,20 @@ div.desc {
   flex-wrap: wrap;
   background-image: none;
   justify-content: center;
+}
+
+.price{
+  /*background-color:#b16774;
+  */
+  background-color: #cbce91ff;
+  color: black;
+  border:1px solid #ccc;
+  font-size:20px;
+  
+}
+
+.car-image-div {
+  height: 200px;
+  width: 300px;
+  background-color: white
 }
