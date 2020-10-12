@@ -9,8 +9,9 @@
     <div class="top-bar">
       <div id="brand">SPARK | RENTALS</div>
       <ul>
-        <li style="float: right"><a   class="active" href="login.html">Login</a></li>
-        <!--<li style="float: right"><a href="contact.html">Contact us</a></li> -->
+        <li style="float: right">
+          <a class="active" href="login.html">Login</a>
+        </li>
         <li style="float: right"><a href="vehicles.html">Vehicles</a></li>
         <li style="float: right"><a href="booking.html">Rent</a></li>
         <li style="float: right">
@@ -33,6 +34,7 @@
                 name="username"
                 placeholder="Username"
               />
+              <div id="usernameError" class="formError"></div>
             </div>
 
             <div class="width100">
@@ -43,10 +45,13 @@
                 name="password"
                 placeholder="Password"
               />
+              <div id="passwordError" class="formError"></div>
             </div>
 
             <div>
-              <button class="width100 button1" type="button" onclick="login()">Login</button>
+              <button class="width100 button1" type="button" onclick="login()">
+                Login
+              </button>
             </div>
           </form>
         </div>
@@ -55,7 +60,12 @@
           <p class="textHeading">Hello!</p>
           <p class="subtext">Enter your details and start journey with us</p>
           <div>
-            <button type="button" class="button2" id="registerButtonLoginPage" onclick="goToRegister()">
+            <button
+              type="button"
+              class="button2"
+              id="registerButtonLoginPage"
+              onclick="goToRegister()"
+            >
               REGISTER
             </button>
           </div>

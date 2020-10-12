@@ -3,8 +3,6 @@
   <head>
     <link rel="stylesheet" href="booking.css" />
 
-
-   
     <script src="booking.js"></script>
   </head>
 
@@ -12,18 +10,16 @@
     <div class="top-bar">
       <div id="brand">SPARK | RENTALS</div>
       <ul>
-        <li style="float: right"><a  class="active" href="login.html">Login</a></li>
-        <!--<li style="float: right"><a href="contact.html">Contact us</a></li> -->
+        <li style="float: right">
+          <a class="active" href="login.html">Login</a>
+        </li>
         <li style="float: right"><a href="vehicles.html">Vehicles</a></li>
         <li style="float: right"><a href="booking.html">Rent</a></li>
         <li style="float: right">
-          <a  href="home.html">Home</a>
+          <a href="home.html">Home</a>
         </li>
       </ul>
     </div>
-   
-
-
 
     <main>
       <div class="flex-container formContainer registerContainer">
@@ -40,7 +36,9 @@
                 id="name"
                 name="name"
                 placeholder="Name"
+                required
               />
+              <div id="nameError" class="formError"></div>
             </div>
 
             <div>
@@ -50,7 +48,9 @@
                 id="username"
                 name="username"
                 placeholder="Username"
+                required
               />
+              <div id="usernameError" class="formError"></div>
             </div>
 
             <div>
@@ -60,7 +60,9 @@
                 id="password"
                 name="password"
                 placeholder="Password"
+                required
               />
+              <div id="passwordError" class="formError"></div>
             </div>
 
             <div>
@@ -70,7 +72,9 @@
                 id="email"
                 name="email"
                 placeholder="Email"
+                required
               />
+              <div id="emailError" class="formError"></div>
             </div>
 
             <div>
@@ -80,7 +84,9 @@
                 id="mobilenumber"
                 name="mobilenumber"
                 placeholder="Mobile number"
+                required
               />
+              <div id="mobileNumberError" class="formError"></div>
             </div>
 
             <div>

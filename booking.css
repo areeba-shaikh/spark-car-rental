@@ -5,7 +5,6 @@ body {
   --theme: #deab7c;
   --accent-color1: #568ea6;
   --accent-color2: #f1d185;
-  /* // #ffbf00; */
 }
 
 ul {
@@ -31,9 +30,7 @@ li a {
 }
 
 li a:hover:not(.active) {
-  /* background-color: white; */
   border: 2px solid var(--theme);
-  /* color:white; */
 }
 
 li a.active {
@@ -65,27 +62,25 @@ img {
   );
   margin: 50px 50px 0 50px;
 }
-.registerContainer{
+.registerContainer {
   margin: auto;
   width: 50%;
   margin-top: 50px;
   justify-content: center;
   background-image: none;
-
 }
-.loginContainer{
+.loginContainer {
   background-image: none;
   margin: auto;
   width: 50%;
   margin-top: 50px;
   justify-content: center;
-
 }
-.loginContainer .div2{
+.loginContainer .div2 {
   background-color: #fea889;
   text-align: center;
 }
-.loginContainer .div1{
+.loginContainer .div1 {
   margin: 0;
   text-align: center;
 }
@@ -97,12 +92,10 @@ img {
   background-color: white;
   margin: 20px 10px 10px 20px;
   padding: 20px;
-  /* box-shadow: 10px 10px 15px rgb(116, 114, 114); */
 }
-.registerDiv{
-  width:70%;
+.registerDiv {
+  width: 70%;
   margin: 20px 10px 10px 20px;
-
 }
 
 input,
@@ -143,7 +136,7 @@ button {
 .button1 {
   background-color: var(--accent-color1);
   transition-duration: 0.4s;
-  color:white;
+  color: white;
 }
 
 .button1:hover {
@@ -159,16 +152,15 @@ button {
   background-color: #fea889;
   color: white;
   transition-duration: 0.4s;
-  font-size:20px;
-  padding:10px;
+  font-size: 20px;
+  padding: 10px;
   font-weight: 300px;
-  width:200px;
-  border:2px solid white;
-
+  width: 200px;
+  border: 2px solid white;
 }
-#registerButtonLoginPage{
-  font-size:20px;
-  width:250px;
+#registerButtonLoginPage {
+  font-size: 20px;
+  width: 250px;
 }
 .symbol {
   width: 20%;
@@ -188,9 +180,8 @@ button {
   font-size: 50px;
   font-weight: 1000;
   display: inline-block;
-  /* text-shadow: 2px 2px 20px white; */
   border: 4px solid rgb(255, 198, 144);
-  background-color:rgba(255, 198, 144, 0.185);
+  background-color: rgba(255, 198, 144, 0.185);
   margin-left: 20px;
   padding: 0 5px 0 5px;
 }
@@ -199,14 +190,13 @@ button {
   margin-top: 20px;
 }
 
-.homePageDiv{
-  text-align:center;
+.homePageDiv {
+  text-align: center;
 }
 
 div.gallery {
-  border:1px solid #ccc;
+  border: 1px solid #ccc;
   width: 300px;
-  /* display: inline-block; */
 }
 
 div.gallery:hover {
@@ -224,7 +214,6 @@ div.desc {
   color: white;
   font-size: 30px;
   background-color: #fea889;
-  
 }
 
 .vehiclesContainer {
@@ -234,18 +223,21 @@ div.desc {
   justify-content: center;
 }
 
-.price{
-  /*background-color:#b16774;
-  */
+.price {
   background-color: #cbce91ff;
   color: black;
-  border:1px solid #ccc;
-  font-size:20px;
-  
+  border: 1px solid #ccc;
+  font-size: 20px;
 }
 
 .car-image-div {
   height: 200px;
   width: 300px;
-  background-color: white
+  background-color: white;
+}
+
+.formError {
+  color: red;
+  font-size: 12px;
+  margin-top: -8px;
 }

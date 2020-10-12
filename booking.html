@@ -2,20 +2,23 @@
 <html>
   <head>
     <link rel="stylesheet" href="booking.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="booking.js"></script>
   </head>
 
   <body>
     <div class="top-bar">
-      <div id="brand">
-        SPARK | RENTALS
-      </div>
+      <div id="brand">SPARK | RENTALS</div>
       <ul>
         <li style="float: right"><a href="login.html">Logout</a></li>
-        <!--<li style="float: right"><a href="contact.html">Contact us</a></li> -->
+
         <li style="float: right"><a href="vehicles.html">Vehicles</a></li>
-        <li style="float: right"><a  class="active" href="booking.html">Rent</a></li>
+        <li style="float: right">
+          <a class="active" href="booking.html">Rent</a>
+        </li>
         <li style="float: right">
           <a href="home.html">Home</a>
         </li>
@@ -23,7 +26,7 @@
     </div>
 
     <main>
-      <div class="flex-container formContainer ">
+      <div class="flex-container formContainer">
         <div class="div1">
           <!-- form -->
           <form name="bookingForm">
@@ -40,10 +43,14 @@
                 <option value="baleno">BALENO</option>
                 <option value="fordFigo">FORD FIGO</option>
               </select>
+              <div id="carError" class="formError"></div>
             </div>
             <div class="width100">
-              <!-- <span class="symbol">&#128204;</span> -->
-              <i class="fa fa-map-marker" aria-hidden="true" style="color:red"></i>
+              <i
+                class="fa fa-map-marker"
+                aria-hidden="true"
+                style="color: red"
+              ></i>
               <input
                 class="inputWithSymbol"
                 type="text"
@@ -51,24 +58,33 @@
                 name="pickupLocation"
                 placeholder="Pickup location"
               />
+              <div id="pickupLocationError" class="formError"></div>
             </div>
             <div class="width100">
               <input
                 type="text"
                 placeholder="Pickup date"
+                id="pickupDate"
+                name="pickupDate"
                 onfocus="(this.type='date')"
                 onblur="(this.type='text')"
               />
               <input
                 type="text"
                 placeholder="Pickup time"
+                id="pickupTime"
+                name="pickupTime"
                 onfocus="(this.type='time')"
                 onblur="(this.type='text')"
               />
+              <div id="pickupDateTimeError" class="formError"></div>
             </div>
             <div class="width100">
-              <!-- <span class="symbol">&#128204;</span> -->
-              <i class="fa fa-map-marker" aria-hidden="true" style="color:red"></i>
+              <i
+                class="fa fa-map-marker"
+                aria-hidden="true"
+                style="color: red"
+              ></i>
               <input
                 class="inputWithSymbol"
                 type="text"
@@ -76,20 +92,26 @@
                 name="dropoffLocation"
                 placeholder="Dropoff location"
               />
+              <div id="dropoffLocationError" class="formError"></div>
             </div>
             <div class="width100">
               <input
                 type="text"
+                id="dropoffDate"
+                name="dropoffDate"
                 placeholder="Dropoff date"
                 onfocus="(this.type='date')"
                 onblur="(this.type='text')"
               />
               <input
                 type="text"
+                id="dropoffTime"
+                name="dropoffTime"
                 placeholder="Dropoff time"
                 onfocus="(this.type='time')"
                 onblur="(this.type='text')"
               />
+              <div id="dropoffDateTimeError" class="formError"></div>
             </div>
 
             <div>
